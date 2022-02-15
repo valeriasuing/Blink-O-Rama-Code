@@ -26,7 +26,7 @@ void setup() {
 }
 
 void loop() {
-  // read the state of the button value:
+  // read the state of the button value as digital:
   buttonState1 = digitalRead(buttonPin1);
   buttonState2 = digitalRead(buttonPin2);
   buttonState3 = digitalRead(buttonPin3); 
@@ -44,7 +44,7 @@ void loop() {
   } 
 
   if (buttonState3 == HIGH) {
-    // turn LEDs off
+    // make lights flash
     digitalWrite(ledPin, HIGH);
     delay(120);
     digitalWrite(ledPin, LOW);
